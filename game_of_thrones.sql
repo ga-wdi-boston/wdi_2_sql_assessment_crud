@@ -14,6 +14,6 @@ INSERT INTO people (name, favorite_weapon, age) VALUES ('Tyrion Lannister', 'Swo
 INSERT INTO people (name, favorite_weapon, age) VALUES ('Daenarys Targerion', 'Other people', 40);
 INSERT INTO people (name, favorite_weapon, age) VALUES ('Jon Snow', 'Fierce good looks', 28);
 
-DISCONNECT westeros;
+\connect postgres;
 
 DROP DATABASE westeros;
