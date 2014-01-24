@@ -27,10 +27,3 @@ insert = conn.exec(insert_sql5)
 
 insert_sql6 = "INSERT INTO people (name, favorite_weapon, age) VALUES ('Renliey','None', 25)"
 insert = conn.exec(insert_sql6)
-
-
-
-
-
-
-
