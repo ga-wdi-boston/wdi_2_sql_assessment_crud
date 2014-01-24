@@ -1,4 +1,5 @@
 CREATE DATABASE westeros;
+CONNECT DATABASE westeros;
 CREATE TABLE houses (name text, symbol text, saying text);
 CREATE TABLE people (name text, favorite_weapon text, age integer);
 
