@@ -31,12 +31,13 @@ INSERT INTO houses (name, sigil, motto) VALUES
 INSERT INTO people (name, weapon, age) VALUES
   ('Eddard', 'Sword', 45),
   ('Tyrian', 'Dagger', 35),
-  ('Robert', 'Bow', 55);
+  ('Robert', 'Sword', 55);
 
 -- 3. Write a query to get all attributes of people greater than a certain age *or* having a specific weapon.
-SELECT * FROM people
+SELECT * FROM people WHERE age > 40 OR weapon = 'Sword';
 
 -- 4. Change the motto of one of your houses. Look it up by its sigil, since you don't know the ID.
 
-
+UPDATE houses SET motto = "dude..." WHERE motto = 'Winter is Coming';
 -- 5. Kill off, er, I mean delete one of your people. Look them up by their name, since you don't know the ID.
+DELETE FROM people WHERE name = 'Robert';
