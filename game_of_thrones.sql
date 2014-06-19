@@ -27,7 +27,7 @@ INSERT INTO houses (name, sigil, motto)
 
 INSERT INTO people (name, weapon, age)
   VALUES ('John Snow', 'sword', 20)
-  , ('Arya', 'cudgel', 40)
+  , ('Arya', 'cudgel', 15)
   , ('Executioner', 'mace', 50);
 
 
@@ -36,8 +36,8 @@ SELECT * FROM people WHERE age > 30 OR weapon = 'cudgel';
 
 
 -- 4. Change the motto of one of your houses. Look it up by its sigil, since you don't know the ID.
-UPDATE houses SET motto = 'fall is ending' WHERE sigil = 'horse';
+UPDATE houses SET motto = 'Fall is so over' WHERE sigil = 'horse';
 
 
 -- 5. Kill off, er, I mean delete one of your people. Look them up by their name, since you don't know the ID
-DELETE FROM people WHERE name = 'Hand';
+DELETE FROM people WHERE name = 'Executioner';
