@@ -37,4 +37,4 @@ SELECT * FROM people WHERE age > 30 OR weapon = 'sword';
 UPDATE houses SET motto = 'roar' WHERE sigil = 'lion';
 
 -- 5. Kill off, er, I mean delete one of your people. Look them up by their name, since you don't know the ID.
-DELETE FROM houses WHERE name = 'Bill';
+DELETE FROM people WHERE name = 'Bill';
