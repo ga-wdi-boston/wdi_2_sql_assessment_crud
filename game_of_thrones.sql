@@ -12,14 +12,16 @@ CREATE TABLE people (id SERIAL PRIMARY KEY, name TEXT, strength TEXT, age INTEGE
 
 -- 2. Create at least three houses and three people with varying attributes.
 
-INSERT INTO houses (name, color, motto) VALUES ('Hufflepuff', 'pink', 'be nice');
-INSERT INTO houses (name, color, motto) VALUES ('Ravenclaw', 'crimson', 'be smart');
-INSERT INTO houses (name, color, motto) VALUES ('Gryffindor', 'gold', 'be brave');
-INSERT INTO houses (name, color, motto) VALUES ('Slytherin', 'green', 'be the best');
+INSERT INTO houses (name, color, motto) VALUES
+  ('Hufflepuff', 'pink', 'be nice'),
+  ('Ravenclaw', 'crimson', 'be smart'),
+  ('Gryffindor', 'gold', 'be brave'),
+  ('Slytherin', 'green', 'be the best');
 
-INSERT INTO people (name, strength, age) VALUES ('Harry Potter', 'renaissance ability', 18);
-INSERT INTO people (name, strength, age) VALUES ('Draco Malfoy', 'cowardice', 18);
-INSERT INTO people (name, strength, age) VALUES ('Cedric Diggory', 'selflessness', 19);
+INSERT INTO people (name, strength, age) VALUES
+  ('Harry Potter', 'renaissance ability', 18),
+  ('Draco Malfoy', 'cowardice', 18),
+  ('Cedric Diggory', 'selflessness', 19);
 
 -- 3. Write a query to get all attributes of people greater than a certain age *or* having a specific weapon.
 
