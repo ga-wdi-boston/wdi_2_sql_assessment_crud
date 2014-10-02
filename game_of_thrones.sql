@@ -1,5 +1,5 @@
 
-#  USED ONLINE RESOURCES
+--  USED ONLINE RESOURCES
 
 DROP DATABASE IF EXISTS westeros;
 CREATE DATABASE westeros;
@@ -11,8 +11,7 @@ CREATE TABLE houses (
   id SERIAL PRIMARY KEY,
   name TEXT,
   sigil TEXT,
-  motto TEXT,
-
+  motto TEXT
 );
 
 --   `houses` has an id (primary key), name (text), a sigil (text) and a motto (text)
@@ -20,12 +19,11 @@ CREATE TABLE houses (
 
 CREATE TABLE people (
   id SERIAL PRIMARY KEY,
-#I HAD AN ERROR WITH id I OMMITED SERIAL
+-- I HAD AN ERROR WITH id I OMMITED SERIAL
 
   name TEXT,
   weapon TEXT,
-  age INTEGER,
-
+  age INTEGER
 );
 -- 2. Create at least three houses and three people with varying attributes.
 INSERT INTO houses (name, sigil, motto)
@@ -52,11 +50,11 @@ SELECT * FROM people WHERE age >19 OR weapon = 'aweapon';
 
 
 -- 4. Change the motto of one of your houses. Look it up by its sigil, since you don't know the ID.
-UPDATE houses SET motto = "hail" WHERE sigil = 'amotto',
+UPDATE houses SET motto = 'hail' WHERE sigil = 'asigil';
 
-##I HAD TO CORRECT THIS QUESTION
+-- I HAD TO CORRECT THIS QUESTION
 
 -- 5. Kill off, er, I mean delete one of your people. Look them up by their name, since you don't know the ID.
-DELETE FROM people WHERE name="aname';
+DELETE FROM people WHERE name='aname';
 
 
