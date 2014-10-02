@@ -9,6 +9,7 @@ CREATE DATABASE westeros;
 CREATE TABLE houses (id SERIAL PRIMARY KEY, name TEXT, sigil TEXT, motto TEXT);
 CREATE TABLE people (id SERIAL PRIMARY KEY, name TEXT, weapon TEXT, age INTEGER);
 
+-- CORRECT
 
 -- 2. Create at least three houses and three people with varying attributes.
 
@@ -36,20 +37,29 @@ VALUES ('Cho', 'Harry''s eye candy', 19);
 INSERT INTO people(name, weapon, age)
 VALUES ('Malfoy', 'jerk', 24);
 
+-- CORRECT - but to be more elegant you could also group the insertions like:
+-- INSERT INTO houses(name, sigil, motto)
+-- VALUES ('Gryffindor', 'Lion', 'Harry Potter is rad'),
+--   ('Slytherin', 'Snake', 'We are slimy people'),
+--   ('Hufflepuff', 'Badger', 'A bunch of duffers');
 
 -- 3. Write a query to get all attributes of people greater than a certain age *or* having a specific weapon.
 
 SELECT * FROM people
 WHERE age > 20 OR weapon = 'jerk';
 
+-- CORRECT
 
 -- 4. Change the motto of one of your houses. Look it up by its sigil, since you don't know the ID.
 
 UPDATE houses SET motto = 'Version 2 of motto' WHERE sigil = 'Snake';
 
+-- CORRECT
 
 -- 5. Kill off, er, I mean delete one of your people. Look them up by their name, since you don't know the ID.
 
 DELETE FROM people WHERE name = 'Malfoy';
 
 -- needed to verify syntax on this last question from my notes
+
+-- CORRECT
