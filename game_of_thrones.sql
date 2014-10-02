@@ -25,6 +25,9 @@ CREATE TABLE people (
 
 -- 2. Create at least three houses and three people with varying attributes.
 
+-- something's going wrong with my attempt at multirow insert
+-- so i'll just do it this way for now
+
 INSERT INTO houses (
   name,
   sigil,
