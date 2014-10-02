@@ -99,7 +99,7 @@ SELECT * FROM people;
 
 -- 3. Write a query to get all attributes of people greater than a certain age *or* having a specific weapon.
 
-SELECT name, weapon, age
+SELECT *
 FROM people
 WHERE age > 50 OR weapon = 'ur mom';
 
