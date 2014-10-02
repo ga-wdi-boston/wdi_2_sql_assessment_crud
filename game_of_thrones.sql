@@ -29,6 +29,9 @@ INSERT INTO people (name, weapon, age) VALUES ('little girl', 'twig', '13');
 -- 3. Write a query to get all attributes of people greater than a certain age *or* having a specific weapon.
 SELECT * FROM people WHERE age > 15;
 
+--I mis understood the question, and only did the age...it should be something like
+SELECT * FROM people WHERE age > 15 OR weapon = 'giant sward';
+
 -- 4. Change the motto of one of your houses. Look it up by its sigil, since you don't know the ID.
 UPDATE houses SET motto = 'we''ll stab you in the back' WHERE sigil = 'the lion';
 
