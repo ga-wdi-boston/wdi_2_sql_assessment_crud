@@ -32,7 +32,9 @@ INSERT INTO house (name, sigil, motto)
 
 -- 3. Write a query to get all attributes of people greater than a certain age *or* having a specific weapon.
 
-SELECT * FROM people WHERE age > 20;
+SELECT * FROM people WHERE age > 20 OR weapon = 'Sword';
+
+-- forgot to add to check for weapon... oops
 
 -- 4. Change the motto of one of your houses. Look it up by its sigil, since you don't know the ID.
 
@@ -47,3 +49,4 @@ SELECT * FROM house;
 
 
 -- I DONT WATCH GAME OF THRONES... to the internet for spoilers... and the internet dosent help that much...
+-- 4/5
