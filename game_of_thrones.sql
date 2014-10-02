@@ -2,6 +2,9 @@ DROP DATABASE IF EXISTS westeros;
 CREATE DATABASE westeros;
 \c westeros
 
+-- ±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+-- 5/5 CORRECT!! HOORAAAY!
+
 -- 1. Create two tables:
 --   `houses` has an id (primary key), name (text), a sigil (text) and a motto (text)
 --   `people` has an id (primary key), name (text), weapon (text), and age (integer)
