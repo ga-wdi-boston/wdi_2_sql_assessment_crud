@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS westeros;
 CREATE DATABASE westeros;
 \c westeros
 
-## I referenced the cheat sheet
+-- I referenced the cheat sheet
 
 -- 1. Create two tables:
 --   `houses` has an id (primary key), name (text), a sigil (text) and a motto (text)
@@ -12,6 +12,8 @@ CREATE TABLE houses (
   sigil TEXT,
   motto TEXT);
 
+--restructured the code for better readability.
+
 --   `people` has an id (primary key), name (text), weapon (text), and age (integer)
 CREATE TABLE people (
   id SERIAL PRIMARY KEY,
@@ -19,8 +21,15 @@ CREATE TABLE people (
   weapon TEXT,
   age INTEGER);
 
+--restructured the code for better readability.
+
 -- 2. Create at least three houses and three people with varying attributes.
-INSERT INTO housese (name, sigil, motto) VALUES ('Sonia', 'rock', 'Power for all!');
+INSERT INTO housese
+(name, sigil, motto)
+VALUES
+('Sonia', 'rock', 'Power for all!');
+
+
 INSERT INTO housese (name, sigil, motto) VALUES ('Sam', 'flower', 'Smell good');
 INSERT INTO housese (name, sigil, motto) VALUES ('Ali', 'robot', 'Future of people');
 
